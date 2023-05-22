@@ -14,16 +14,43 @@ let verifica;
 verificaStringaPalindroma(parola);
 
 function verificaStringaPalindroma(word){
+    let wordReverse;
+    /*
     let array = word.split("");
     console.log(array);
 
     let arrayReverse = array.reverse();
     console.log(arrayReverse);
 
-    let wordReverse = arrayReverse.join("");
+    wordReverse = arrayReverse.join("");
     console.log(wordReverse);
+    */
+    
+    let wordLunghezza = word.length;
+    let parolaNormale = [];
+    let parolaAlContrario = [];
 
-    if(word === wordReverse){
+    for(let i = 0; i < wordLunghezza; i++){
+        console.log(word.charAt(i));
+        parolaNormale[i] = word.charAt(i);
+    }
+    console.log(parolaNormale);
+    console.log();
+
+    console.log(word);
+    console.log("La lunghezza della parola è " + wordLunghezza);
+
+    let contatore = 0;
+    for(let i = (wordLunghezza - 1); i >= 0; i=i-1){
+        console.log(word.charAt(i));
+        parolaAlContrario[contatore] = word.charAt(i);
+        contatore++;
+    }
+    console.log(parolaAlContrario);
+
+
+
+    if(parolaNormale == parolaAlContrario){
         verifica = true;
         return true;
     }
