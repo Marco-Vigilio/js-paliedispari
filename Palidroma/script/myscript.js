@@ -9,6 +9,8 @@ Creare una funzione per capire se la parola inserita è palindroma
 
 let parola = prompt("Inserisci una parola");
 
+let verifica;
+
 verificaStringaPalindroma(parola);
 
 function verificaStringaPalindroma(word){
@@ -22,9 +24,16 @@ function verificaStringaPalindroma(word){
     console.log(wordReverse);
 
     if(word === wordReverse){
-        console.log("La parola è palindroma");
+        verifica = true;
         return true;
     }
-    console.log("La parola non è palindroma");
+    verifica = false;
     return false;
+}
+
+if(verifica === true){
+    console.log("La parola è Palindroma")
+}
+else{
+    console.log("La parola non è Palindroma");
 }
