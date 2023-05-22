@@ -28,20 +28,16 @@ function PariDispari(choice,number){
 
     somma = number + numRandom;
     console.log("La somma dei numeri è : " + somma);
-/*
+
     if(choice === "pari"){
-        console.log(messaggio);
         if((somma % 2) == 0){
             console.log("Hai vinto");
         }
         else{
             console.log("Hai perso");
         }
-        
-        
     }
     else if(choice === "dispari"){
-        console.log(messaggio);
         if((somma % 2) == 1){
             console.log("Hai vinto");
         }
@@ -49,7 +45,6 @@ function PariDispari(choice,number){
             console.log("Hai perso");
         }
     }
-*/
 }
 
 
